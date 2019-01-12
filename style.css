@@ -1,0 +1,362 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url(fonts/11823.ttf);
+}
+
+#top_menu {
+    display: flex;
+    height: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+#main {
+    list-style: none;
+    height: inherit;
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+body>div>ul li a img {
+
+    display: inline-block;
+    height: 17px;
+    vertical-align: middle;
+    opacity: 0.6;
+    outline: none;
+    box-sizing: border-box;
+
+}
+
+
+body>div>ul li a {
+    text-decoration: none;
+    border-style: none;
+    outline-style: none;
+    outline: none;
+    text-decoration: none;
+    color: gray;
+    font-family: "Product Sans";
+    font-size: 14px;
+}
+#drop-down-menu{
+    list-style: none;
+    position: absolute;
+    padding: 0 5px 0 5px;
+    background-color: white;
+    grid-template-columns: repeat(3, 70px);
+    grid-template-rows: repeat(5, 90px);
+    justify-content: center;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px ;
+    margin-left: 5px;
+    border-radius: 5px;
+    min-width: 200px;
+    max-height: 280px;
+    overflow-y: scroll;
+    right: 10px;
+    top: 50px;
+    display: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
+}
+#top_menu>#main #apps:focus-within #drop-down-menu{
+    display: grid;
+    z-index: 1;
+}
+#drop-down-menu li{
+    position: relative;
+    border: 1px solid rgba(128, 128, 128, 0);
+    border-radius:5px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding-right: initial;
+    padding-left: 0px;
+    margin-right: 0 !important;
+    background-image: url(img/apps-icon.png);
+    background-size: 36px;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+}
+
+form[name="poisk"]{
+    margin-bottom: 5px;
+}
+#buttons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.button{
+    display: block;
+    min-width: 170px;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    background-color: rgba(211, 211, 211, 0.267);
+
+}
+
+#drop-down-menu li:hover{
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    border-radius:5px;
+    
+}
+
+#drop-down-menu>li>a{
+    display: block;
+    height: 79px;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 13px;
+    word-wrap: break-word;
+    visibility: visible;
+}
+span{
+    position: relative;
+    top: 30px;
+    
+}
+#main li {
+    margin: 0 20px 0 0;
+    height: auto;
+}
+
+.shmoogle {
+    display: block;
+    margin-top: 8%;
+    font-size: 82px;
+    font-weight: 600;
+    font-family: "Product Sans";
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: -15px;
+    word-spacing: -100%;
+    white-space: nowrap;
+
+}
+
+.shmoogle div {
+    display: inline-flex;
+    justify-content: center;
+    letter-spacing: 2px;
+
+
+}
+
+body>div>ul>li:nth-child(5n)>a {
+    background: url(img/account-icon.png) no-repeat;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-position: 0 0;
+    background-size: 100%;
+}
+
+#shmoogle1::after {
+    content: "Ш";
+    color: rgb(66, 133, 244);
+}
+
+#shmoogle2::after {
+    content: "м";
+    color: rgb(234, 67, 53);
+}
+
+#shmoogle3::after {
+    content: "у";
+    color: rgb(251, 188, 5);
+}
+
+#shmoogle4::after {
+    content: "у";
+    color: rgb(66, 133, 244);
+}
+
+/* #shmoogle5::after{
+    content: "г";
+    color: rgb(52, 168, 83);
+} */
+body>div:nth-child(2n) :nth-child(5n)::after {
+    content: "г";
+    color: rgb(52, 168, 83);
+}
+
+#shmoogle6::after {
+    content: "л";
+    color: rgb(234, 67, 53);
+}
+
+/* img {
+    position: relative;
+    display: block;
+    margin: 100px auto 0 auto;
+} */
+input {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 38px;
+    font-size: 18px;
+    margin: 20px auto;
+    border-radius: 5px;
+    border: 1px solid rgba(30, 51, 143, 0.24);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+}
+
+
+
+input:focus {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+input:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+footer {
+    display: block;
+    position: relative;
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(211, 211, 211, 0.267);
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-sizing: border-box;
+
+
+}
+
+footer>div {
+    display: block;
+    position: relative;
+    height: 100%;
+    align-content: center;
+}
+
+
+
+footer>div ul {
+    font-size: 14px;
+    color: gray;
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: "Product Sans";
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    flex: 1 25%;
+    padding-top: 10px;
+}
+
+#language{
+    justify-content: flex-end;
+    margin-left: auto;
+}
+footer ul li:nth-child(4n) {
+    justify-content: flex-end;
+    margin-left: auto;
+    word-wrap: break-word;
+}
+
+footer ul li {
+    padding-right: 15px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+footer>div ul:last-child {
+    padding-top: 10px;
+}
+
+footer ul li a {
+    font-size: 14px;
+    color: gray;
+    font-family: "Product Sans";
+    text-decoration: none;
+    position: relative;
+}
+
+@media screen and (max-width:600px) {
+    input {
+        width: 95%;
+    }
+    /* #buttons{
+        display: none;
+    } */
+    footer>div {
+        justify-content: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: auto;
+    }
+
+    footer div ul li {
+        margin-left: auto;
+        margin-right: auto;
+
+
+
+    }
+
+    footer {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        position: relative;
+        height: auto;
+    }
+
+    footer div>ul {
+        align-content: center;
+        justify-content: center;
+    }
+
+    footer ul li:nth-child(4n) {
+        justify-content: flex-start;
+    }
+
+}
+
+hr {
+    border: 1px solid rgba(128, 128, 128, 0.075);
+    margin: 10px 0 0 0;
+}
