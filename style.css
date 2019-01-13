@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+/* подключение шрифтов */
 @font-face {
     font-family: "Product Sans";
     src: url(fonts/11823.ttf);
