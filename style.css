@@ -125,6 +125,7 @@ form[name="poisk"]{
     margin-right: 10px;
     margin-left: 10px;
     border: none;
+    color: #000;
     background-color: rgba(211, 211, 211, 0.267);
 
 }
