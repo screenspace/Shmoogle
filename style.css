@@ -129,7 +129,9 @@ form[name="poisk"]{
     background-color: rgba(211, 211, 211, 0.267);
 
 }
-
+.button:active{
+    transform: translateY(2px);
+}
 #drop-down-menu li:hover{
     border: 1px solid rgba(128, 128, 128, 0.274);
     border-radius:5px;
